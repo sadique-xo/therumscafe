@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Rums Café - Website
+
+Premium café website for The Rums Café, Ranchi. Built with Next.js 14, Tailwind CSS, and shadcn/ui.
+
+## Tech Stack
+
+- **Next.js 14** (App Router)
+- **Tailwind CSS**
+- **shadcn/ui**
+- **Lucide Icons**
+- **Google Fonts** (Playfair Display, Inter)
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Pages
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `/` - Home (Hero, About, Menu Highlights, Instagram, Testimonials, Location, Footer)
+- `/menu` - Full menu with sticky category tabs
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+All content lives in `src/data/cafe-data.ts`. Edit this file to update menu items, testimonials, contact info, etc.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Google Maps Embed
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To get the correct Maps embed: Go to [Google Maps](https://maps.google.com), search "The Rums Cafe Argora Chowk Ranchi", click **Share** → **Embed a map**, and replace the `src` in `src/components/Location.tsx`.
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Then connect your repo to [Vercel](https://vercel.com) for one-click deployment.
+
+## Checklist
+
+- [x] Olive green + cream + gold theme
+- [x] Playfair Display headings, Inter body
+- [x] Full menu with sticky tabs
+- [x] Instagram feed section
+- [x] Google reviews
+- [x] Maps, WhatsApp, Zomato, Swiggy links
+- [x] Mobile responsive
+- [x] Footer: "Created by Sadique (sadique.co)"
+
+---
+
+*The Rums Café - FLAVOUR to SOUL !*

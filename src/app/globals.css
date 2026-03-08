@@ -12,22 +12,23 @@
 
 @layer base {
   :root {
-    --background: oklch(1 0 0);
-    --foreground: oklch(0.145 0 0);
-    --card: oklch(1 0 0);
-    --card-foreground: oklch(0.145 0 0);
-    --popover: oklch(1 0 0);
-    --popover-foreground: oklch(0.145 0 0);
-    --primary: oklch(0.205 0 0);
-    --primary-foreground: oklch(0.985 0 0);
-    --secondary: oklch(0.97 0 0);
-    --secondary-foreground: oklch(0.205 0 0);
-    --muted: oklch(0.97 0 0);
-    --muted-foreground: oklch(0.556 0 0);
-    --accent: oklch(0.97 0 0);
-    --accent-foreground: oklch(0.205 0 0);
+    --background: #F5F0E8;
+    --foreground: #1A1A1A;
+    --primary: #2C3E1A;
+    --primary-foreground: #F5F0E8;
+    --secondary: #3B5323;
+    --accent: #C8A45A;
+    --card: #F5F0E8;
+    --card-foreground: #1A1A1A;
+    --popover: #F5F0E8;
+    --popover-foreground: #1A1A1A;
+    --secondary: #3B5323;
+    --secondary-foreground: #F5F0E8;
+    --muted: #e8e2d8;
+    --muted-foreground: #4a4a4a;
+    --accent-foreground: #1A1A1A;
     --destructive: oklch(0.58 0.22 27);
-    --border: oklch(0.922 0 0);
+    --border: rgba(44, 62, 26, 0.15);
     --input: oklch(0.922 0 0);
     --ring: oklch(0.708 0 0);
     --chart-1: oklch(0.809 0.105 251.813);
@@ -82,7 +83,7 @@
     --font-sans: var(--font-sans);
   }
   * {
-    @apply border-border outline-ring/50;
+    border-color: var(--border);
   }
   body {
     @apply bg-background text-foreground;

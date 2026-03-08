@@ -11,6 +11,16 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        accent: "var(--accent)",
+        cream: "#F5F0E8",
+        olive: "#2C3E1A",
+        gold: "#C8A45A",
+      },
+      fontFamily: {
+        heading: ["var(--font-playfair)", "serif"],
+        body: ["var(--font-inter)", "sans-serif"],
       },
     },
   },
