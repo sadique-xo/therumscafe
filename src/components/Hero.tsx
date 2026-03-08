@@ -15,27 +15,31 @@ export function Hero() {
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-black/35" />
+        <div className="absolute inset-0 bg-gradient-hero" />
+        <div className="absolute inset-0 bg-gradient-to-b from-olive/20 via-transparent to-olive/30" />
       </div>
 
       <div className="relative z-10 text-center px-6 py-24 max-w-4xl mx-auto">
-        <h1 className="font-heading text-5xl md:text-7xl font-bold text-cream mb-4 drop-shadow-lg">
+        <p className="text-luxury-wide text-gold-light text-xs md:text-sm font-medium tracking-[0.2em] mb-4">
+          Premium Dining · Ranchi
+        </p>
+        <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold text-cream mb-4 drop-shadow-2xl tracking-tight">
           {cafe.name}
         </h1>
-        <p className="font-heading text-2xl md:text-4xl text-gold mb-2 font-medium">
+        <p className="font-heading text-2xl md:text-4xl text-gold-light mb-2 font-medium drop-shadow-lg">
           {cafe.tagline}
         </p>
-        <p className="text-cream/90 text-sm md:text-base mb-1">
+        <p className="text-cream/95 text-sm md:text-base mb-1 font-light">
           {cafe.taglineSub}
         </p>
-        <p className="text-cream/80 text-xs md:text-sm mb-8">
+        <p className="text-cream/80 text-xs md:text-sm mb-10 tracking-wide">
           {cafe.cuisines}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link href="/menu">
             <Button
               size="lg"
-              className="bg-gold hover:bg-gold/90 text-olive font-semibold rounded-full px-8 py-6 text-lg"
+              className="bg-gradient-gold hover:opacity-95 text-olive font-semibold rounded-full px-8 py-6 text-lg shadow-luxury hover:shadow-gold-glow transition-all duration-300 border border-gold-dark/20"
             >
               View Menu
             </Button>
@@ -43,7 +47,7 @@ export function Hero() {
           <a href={cafe.maps} target="_blank" rel="noopener noreferrer">
             <Button
               size="lg"
-              className="rounded-full px-8 py-6 text-lg border-2 border-cream bg-transparent text-cream hover:bg-cream hover:text-olive font-semibold transition-colors"
+              className="rounded-full px-8 py-6 text-lg border-2 border-cream/90 bg-cream/5 backdrop-blur-sm text-cream hover:bg-cream hover:text-olive font-semibold transition-all duration-300 shadow-luxury-sm"
             >
               View Directions
             </Button>

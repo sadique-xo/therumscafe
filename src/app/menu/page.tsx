@@ -39,11 +39,14 @@ export default function MenuPage() {
       <Navbar />
       <main className="pt-24 pb-16">
         <div className="max-w-6xl mx-auto px-6">
-          <h1 className="font-heading text-4xl md:text-5xl font-bold text-olive mb-12 text-center">
+          <p className="text-luxury-wide text-gold text-xs font-medium tracking-[0.2em] mb-4 text-center">
+            Our Menu
+          </p>
+          <h1 className="font-heading text-4xl md:text-5xl font-bold text-olive mb-12 text-center tracking-tight">
             The Full Spread
           </h1>
 
-          <div className="sticky top-20 z-40 bg-cream/95 backdrop-blur py-3 -mx-6 px-6 overflow-x-auto mb-12">
+          <div className="sticky top-20 z-40 bg-cream-warm/95 backdrop-blur-xl py-3 -mx-6 px-6 overflow-x-auto mb-12 border-b border-olive/5">
             <div className="flex gap-2 min-w-max">
               {fullMenuSections.map((section) => (
                 <button
@@ -52,7 +55,7 @@ export default function MenuPage() {
                   className={cn(
                     "px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors",
                     activeSection === section.id
-                      ? "bg-olive text-cream"
+                      ? "bg-olive text-cream shadow-luxury-sm"
                       : "bg-olive/10 text-olive hover:bg-olive/20"
                   )}
                 >

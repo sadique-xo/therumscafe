@@ -19,6 +19,7 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/menu", label: "Menu" },
   { href: "/#about", label: "About" },
+  { href: "/#gallery", label: "Gallery" },
   { href: "/#visit", label: "Visit" },
 ];
 
@@ -45,7 +46,7 @@ export function Navbar() {
         className={cn(
           "max-w-6xl mx-auto flex items-center justify-between transition-all duration-300 rounded-full px-6 py-3",
           scrolled
-            ? "bg-cream/80 backdrop-blur-md border border-olive/10 shadow-sm"
+            ? "bg-cream-warm/90 backdrop-blur-xl border border-olive/10 shadow-luxury"
             : "bg-transparent"
         )}
       >
@@ -80,7 +81,7 @@ export function Navbar() {
                 "rounded-full transition-colors",
                 isOverHero
                   ? "bg-cream/90 hover:bg-cream text-olive border border-cream/20"
-                  : "bg-olive hover:bg-secondary text-cream"
+                  : "bg-olive hover:bg-olive-light text-cream shadow-luxury-sm"
               )}
             >
               Reserve a Table
@@ -98,7 +99,7 @@ export function Navbar() {
             >
               <Menu className="h-6 w-6" />
             </SheetTrigger>
-            <SheetContent side="right" className="bg-cream border-olive/10 pt-12">
+            <SheetContent side="right" className="bg-cream-warm border-olive/10 pt-12">
               <SheetHeader className="relative">
                 <SheetTitle className="font-heading text-olive text-xl">
                   {cafe.name}
@@ -120,7 +121,7 @@ export function Navbar() {
                   onClick={() => setOpen(false)}
                   className="mt-4"
                 >
-                  <Button className="w-full bg-olive hover:bg-secondary text-cream rounded-full">
+                  <Button className="w-full bg-olive hover:bg-olive-light text-cream rounded-full">
                     Reserve a Table
                   </Button>
                 </a>

@@ -3,22 +3,25 @@ import { cafe } from "@/data/cafe-data";
 
 export function Location() {
   return (
-    <section id="visit" className="py-24 px-4 sm:px-6 bg-olive/5 overflow-x-hidden">
+    <section id="visit" className="py-28 px-4 sm:px-6 bg-gradient-olive overflow-x-hidden relative">
       <div className="max-w-6xl mx-auto w-full min-w-0">
-        <h2 className="font-heading text-4xl md:text-5xl font-bold text-olive mb-12 text-center">
+        <p className="text-luxury-wide text-gold text-xs font-medium tracking-[0.2em] mb-4 text-center">
+          Visit Us
+        </p>
+        <h2 className="font-heading text-4xl md:text-5xl font-bold text-olive mb-12 text-center tracking-tight">
           Find Us
         </h2>
         <div className="grid lg:grid-cols-2 gap-12 items-start min-w-0">
           <div className="space-y-6">
             <div className="flex gap-4">
-              <MapPin className="h-6 w-6 text-gold shrink-0" />
+              <MapPin className="h-6 w-6 text-gold shrink-0 mt-0.5" />
               <div>
                 <div className="font-semibold text-olive mb-1">Address</div>
                 <p className="text-foreground/90">{cafe.address}</p>
               </div>
             </div>
             <div className="flex gap-4">
-              <Phone className="h-6 w-6 text-gold shrink-0" />
+              <Phone className="h-6 w-6 text-gold shrink-0 mt-0.5" />
               <div>
                 <div className="font-semibold text-olive mb-1">Phone</div>
                 <a
@@ -30,7 +33,7 @@ export function Location() {
               </div>
             </div>
             <div className="flex gap-4">
-              <Clock className="h-6 w-6 text-gold shrink-0" />
+              <Clock className="h-6 w-6 text-gold shrink-0 mt-0.5" />
               <div>
                 <div className="font-semibold text-olive mb-1">Hours</div>
                 <p className="text-foreground/90">{cafe.hours}</p>
@@ -41,7 +44,7 @@ export function Location() {
                 href={cafe.maps}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-olive text-cream px-4 py-2 rounded-full hover:bg-secondary transition-colors text-sm font-medium"
+                className="inline-flex items-center gap-2 bg-olive text-cream px-4 py-2 rounded-full hover:bg-olive-light transition-colors text-sm font-medium shadow-luxury-sm"
               >
                 <MapPin className="h-4 w-4" />
                 Get Directions
@@ -74,7 +77,7 @@ export function Location() {
               </a>
             </div>
           </div>
-          <div className="rounded-2xl overflow-hidden border border-olive/10 aspect-video min-h-[250px] w-full max-w-full min-w-0">
+            <div className="rounded-2xl overflow-hidden border border-olive/10 shadow-luxury aspect-video min-h-[250px] w-full max-w-full min-w-0">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.7386!2d85.298168!3d23.350152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e1047b2b3b3b%3A0x0!2sThe%20Rums%20Cafe%2C%20Argora%20Chowk%2C%20Ranchi!5e0!3m2!1sen!2sin!4v1709900000000"
               width="100%"

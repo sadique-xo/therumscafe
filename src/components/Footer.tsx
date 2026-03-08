@@ -3,17 +3,18 @@ import { cafe } from "@/data/cafe-data";
 
 export function Footer() {
   return (
-    <footer className="py-16 px-6 bg-olive text-cream">
-      <div className="max-w-6xl mx-auto text-center">
-        <div className="font-heading text-2xl font-bold mb-2">{cafe.name}</div>
-        <p className="text-gold font-medium mb-1">{cafe.tagline}</p>
+    <footer className="py-20 px-6 bg-gradient-footer text-cream relative overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(184,134,11,0.08)_0%,_transparent_70%)]" />
+      <div className="max-w-6xl mx-auto text-center relative">
+        <div className="font-heading text-2xl font-bold mb-2 tracking-tight">{cafe.name}</div>
+        <p className="text-gold-light font-medium mb-1">{cafe.tagline}</p>
         <p className="text-cream/80 text-sm mb-8">{cafe.taglineSub}</p>
         <div className="flex justify-center gap-6 mb-8">
           <a
             href={cafe.instagram}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-gold transition-colors"
+            className="hover:text-gold-light transition-colors duration-300"
             aria-label="Instagram"
           >
             <Instagram className="h-6 w-6" />
@@ -41,7 +42,7 @@ export function Footer() {
               href="https://sadique.co"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gold hover:underline"
+              className="text-gold-light hover:text-gold transition-colors duration-300"
             >
               Sadique (sadique.co)
             </a>
